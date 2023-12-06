@@ -69,9 +69,9 @@ class MazePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     // どのように図形を描画するか定義
     final paint = Paint()..color = Colors.green;
-    // スクリーン幅を列の数で割ることで、各セルの幅を計算（mazeData[0]:最初の行、mazeData[0].length:最初の行の長さ、つまり列の数）
+    // スクリーン幅を列の数で割ることで、各セルの幅を計算
     final cellWidth = size.width / mazeData[0].length;
-    // スクリーンの高さを行の数で割ることで、各セルの高さを計算（mazeData.length:配列の長さ、つまり行の数）
+    // スクリーンの高さを行の数で割ることで、各セルの高さを計算
     final cellHeight = size.height / mazeData.length;
     // 迷路の描画
     for (int i = 0; i < mazeData.length; i++) {
